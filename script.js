@@ -23,9 +23,9 @@
 
             // Create and append the Clear button
             let actionCell = newRow.insertCell(3);
-            let clearButton = document.createElement('button');
-            clearButton.innerText = 'x';
-            clearButton.className = 'delete';
+             let clearButton = document.getElementByClassName('delete');
+            // clearButton.innerText = 'x';
+            // clearButton.className = 'delete';
             clearButton.addEventListener('click', function() {
                 table.deleteRow(newRow.rowIndex - 1);
             });
